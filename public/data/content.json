@@ -1,0 +1,144 @@
+{
+  "navbar": [
+    {
+      "id": 1,
+      "title": "Overview",
+      "icon": "./assets/images/overview.png"
+    },
+    {
+      "id": 2,
+      "title": "Tickets",
+      "icon": "./assets/images/tickets.png"
+    },
+    {
+      "id": 3,
+      "title": "Ideas",
+      "icon": "./assets/images/ideas.png"
+    },
+    {
+      "id": 4,
+      "title": "Contacts",
+      "icon": "./assets/images/contacts.png"
+    },
+    {
+      "id": 5,
+      "title": "Agents",
+      "icon": "./assets/images/agents.png"
+    },
+    {
+      "id": 6,
+      "title": "Articles",
+      "icon": "./assets/images/articles.png"
+    },
+    {
+        "id": 7,
+        "title": "Settings",
+        "icon": "./assets/images/settings.png"
+      },
+      {
+        "id": 8,
+        "title": "Subscription",
+        "icon": "./assets/images/subscription.png"
+      }
+  ],
+
+  "topCard": [
+    {
+      "id": 1,
+      "title": "Unresolved",
+      "value": 60
+    },
+    {
+      "id": 2,
+      "title": "Overdue",
+      "value": 16
+    },
+    {
+      "id": 3,
+      "title": "Open",
+      "value": 43
+    },
+    {
+      "id": 4,
+      "title": "On hold",
+      "value": 64
+    }
+  ],
+
+  "tableViewInfo": [
+    {
+      "id": 1,
+      "title": "Resolved",
+      "value": 449
+    },
+    {
+      "id": 2,
+      "title": "Received",
+      "value": 426
+    },
+    {
+      "id": 3,
+      "title": "Average first response time",
+      "value": "33m"
+    },
+    {
+      "id": 4,
+      "title": "Average response time",
+      "value": "3h 8m"
+    },
+    {
+      "id": 5,
+      "title": "Resolution within SLA",
+      "value": "94%"
+    }
+  ],
+
+  "unresolvedTickets": [
+    {
+      "id": 1,
+      "title": "Waiting on Feature Request",
+      "value": 4238
+    },
+    {
+      "id": 2,
+      "title": "Awaiting Customer Response",
+      "value": 1005
+    },
+    {
+      "id": 3,
+      "title": "Awating Developer Fix",
+      "value": 914
+    },
+    {
+      "id": 4,
+      "title": "Pending",
+      "value": 281
+    }
+  ],
+
+  "tasks": [
+    {
+      "id": 1,
+      "title": "Create new task",
+      "subText": "+"
+    },
+    {
+      "id": 2,
+      "title": "Finish ticket update",
+      "subText": "urgent",
+      "btnTag": "goldTag"
+    },
+    {
+      "id": 3,
+      "title": "Create new ticket example",
+      "subText": "New",
+      "btnTag": "greenTag"
+    },
+    {
+      "id": 4,
+      "title": "Update ticket report",
+      "subText": "Default",
+      "btnTag": "defaultTag"
+    }
+  ]
+}

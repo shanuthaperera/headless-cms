@@ -1,0 +1,184 @@
+:root {
+  --primary-color: #3751ff;
+  --background-color: #f7f8fc;
+  --text-muted-color: #9fa2b4;
+  --text-color: #252733;
+  --side-nav-color: #363740;
+  --light-gray-font: #c5c7cd;
+  --gold-bg: #fec400;
+  --green-bg: #29cc97;
+  --default-bg: #f0f1f7;
+  --white-font: #ffffff;
+  --devider-color: #dfe0eb;
+  --sidenav-heading: #a4a6b3;
+  --whitenav-font: #dde2ff;
+}
+
+body {
+  font-family: "Mulish", sans-serif;
+  font-weight: 500;
+  background-color: var(--background-color);
+  margin: 0;
+}
+
+.navbar-brand {
+  color: var(--text-color);
+}
+
+.accountName {
+  color: var(--text-color);
+}
+
+.accountholderimagediv {
+  padding: 0.15rem;
+}
+
+.breakPoint {
+  background-color: var(--devider-color);
+  padding: 0.1rem;
+  height: 2rem;
+  width: 0px;
+  border: 1px;
+}
+
+.sidenav {
+  background-color: var(--side-nav-color);
+  min-height: 100svh;
+}
+
+.sidenavHeading {
+  color: var(--sidenav-heading);
+  font-weight: 700;
+  font-size: 19px;
+}
+
+.overview {
+  background-color: rgba(159, 162, 180, 0.08);
+  border-radius: 10px;
+}
+
+.overview .sidenavItem {
+  color: var(--whitenav-font);
+}
+
+.hr {
+  width: 210px !important;
+  color: var(--devider-color);
+  opacity: 0.25;
+}
+
+.sidenavItem {
+  color: var(--sidenav-heading);
+  font-weight: 400;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.sidenavItem:hover{
+  background-color: rgba(159, 162, 180, 0.08);
+  border-radius: 10px;
+}
+
+.topCard .card-title {
+  color: var(--text-muted-color);
+}
+
+.topCard .card-text {
+  color: var(--text-color);
+}
+
+.topCard:hover .card-title,
+.topCard:hover .card-text {
+  color: var(--primary-color);
+}
+
+.topCard:hover {
+  border-color: var(--primary-color);
+  cursor: pointer;
+}
+
+.cardbox-title {
+  color: var(--text-muted-color);
+  font-size: 16px;
+}
+
+.infoCard .title {
+  color: var(--text-color);
+}
+
+.infoCard .smallTitle {
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+.smallText {
+  font-size: 12px;
+  color: var(--text-muted-color);
+}
+
+.chartLegned {
+  color: var(--text-muted-color);
+}
+
+.infoText {
+  color: var(--text-color);
+}
+
+li{
+  cursor: pointer;
+}
+
+.infoNumber {
+  color: var(--text-muted-color);
+}
+
+.newTaskTitle {
+  color: var(--light-gray-font);
+}
+
+.cross {
+  color: var(--text-muted-color);
+  background-color: var(--default-bg);
+}
+
+.tagText {
+  font-size: 14px;
+}
+
+.defaultTag {
+  background-color: var(--default-bg);
+  color: var(--text-muted-color);
+}
+
+.goldTag {
+  background-color: var(--gold-bg);
+  color: var(--white-font);
+}
+
+.greenTag {
+  background-color: var(--green-bg);
+  color: var(--white-font);
+}
+
+.blueLine {
+  background-color: var(--primary-color);
+  width: 20px;
+  height: 2px;
+}
+
+.grayLine {
+  background-color: var(--text-muted-color);
+  width: 20px;
+  height: 2px;
+}
+
+.imagegraph {
+  height: 40vh;
+  width: auto;
+}
+
+@media (max-width: 576px) {
+  .list-group {
+    width: 100% !important;
+  }
+}

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Headless Assignment</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <div class="row m-0 gap-0">
+      <div
+        class="col-lg-2 col-md-6 col-sm-12 d-none d-lg-block sidenav text-white h-screen gap-0 m-0"
+      >
+        <div class="position-fixed">
+          <div
+            class="d-flex justify-content-start gap-2 align-items-center p-2 py-4"
+          >
+            <div class="icon">
+              <img
+                src="./assets/images/logo.png"
+                alt="logo"
+                class="img-fluid"
+              />
+            </div>
+            <div class="fs-6 sidenavHeading">Dashboard kit</div>
+          </div>
+
+          <div class="flex flex-col m-0 gap-0 pt-4" id="navBarItems"></div>
+        </div>
+      </div>
+
+      <div class="col-lg-10 col-md-6 col-sm-12 mb-5">
+        <div
+          class="container-fluid d-flex flex-column flex-grow-1 gap-4"
+          id="secondcol"
+        >
+          <!-- navbar -->
+          <nav class="navbar navbar-expand-lg bg-body-tertiary mx-0 gap-0">
+            <div class="container-fluid">
+              <a class="navbar-brand fw-bold" href="#">Overview</a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarText"
+                aria-controls="navbarText"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarText">
+                <div class="navbar-text ms-auto">
+                  <div class="d-block d-sm-none" id="mobileNavContent"></div>
+                  <div
+                    class="d-flex flex-col flex-sm-row justify-content-between align-items-center gap-3"
+                  >
+                    <div class="d-flex gap-3">
+                      <img
+                        src="./assets/images/search.svg"
+                        alt="search"
+                        class="img-fluid"
+                      />
+
+                      <img
+                        src="./assets/images/notification.svg"
+                        alt="notification-bell"
+                        class="img-fluid"
+                      />
+                    </div>
+
+                    <div class="breakPoint mx-3"></div>
+
+                    <div class="accountName">Jones Ferndinand</div>
+                    <div
+                      class="rounded-circle border border-2 border-secondary-subtle accountholderimagediv"
+                    >
+                      <img
+                        src="./assets/images/accountHolder.svg"
+                        alt="account-holder"
+                        class="img-fluid"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+          <!-- navbarend -->
+
+          <!-- topCards -->
+          <div class="row" id="infoCards"></div>
+          <!-- endTopCards -->
+
+          <!-- chartView -->
+          <div class="w-100 card">
+            <div class="card-body p-0">
+              <div
+                class="d-flex justify-content-between flex-column flex-sm-row"
+              >
+                <div class="w-100 p-4">
+                  <div
+                    class="d-flex justify-content-between align-items-bottom"
+                  >
+                    <div class="flex flex-col">
+                      <div class="infoCard title fs-4">Today's trends</div>
+                      <div class="infoCard smallText">
+                        as of 25 May 2019, 09.41 PM
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex justify-content-end align-items-center gap-4"
+                    >
+                      <div class="d-flex align-items-center gap-2">
+                        <div class="blueLine"></div>
+                        <div class="chartLegned">Today</div>
+                      </div>
+                      <div class="d-flex align-items-center gap-2">
+                        <div class="grayLine"></div>
+                        <div class="chartLegned">Yesterday</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="imageDiv px-4">
+                    <img
+                      src="./assets/images/graph.svg"
+                      alt="graph"
+                      class="imagegraph img-fluid"
+                    />
+                  </div>
+                </div>
+
+                <ul
+                  class="list-group w-50 text-center px-md-2 m-0"
+                  id="tableInfoCards"
+                ></ul>
+              </div>
+            </div>
+          </div>
+          <!-- endChartView -->
+
+          <!-- bottomCards -->
+          <div
+            class="d-flex flex-column flex-sm-row justify-content-between gap-4 flex-grow-1"
+          >
+            <div class="card infoCard w-100">
+              <div class="card-body p-0">
+                <div
+                  class="d-flex justify-content-between align-items-center p-4"
+                >
+                  <div class="flex flex-col">
+                    <div class="title fw-normal fs-5">Unresolved tickets</div>
+                    <div class="smallText">
+                      Group : <span class="fw-semibold">Support</span>
+                    </div>
+                  </div>
+
+                  <div class="smallTitle">View details</div>
+                </div>
+
+                <ul class="list-group w-100" id="ticketList"></ul>
+              </div>
+            </div>
+
+            <div class="card infoCard w-100">
+              <div class="card-body p-0">
+                <div
+                  class="d-flex justify-content-between align-items-center p-4"
+                >
+                  <div class="flex flex-col">
+                    <div class="title fw-normal fs-5">Tasks</div>
+                    <div class="smallText">Today</div>
+                  </div>
+
+                  <div class="smallTitle">View all</div>
+                </div>
+
+                <ul class="list-group w-100" id="taskList"></ul>
+              </div>
+            </div>
+          </div>
+          <!-- endBottomCards -->
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/main.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
